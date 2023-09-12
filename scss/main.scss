@@ -1,41 +1,61 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+// SASS Veriables ========================= //
+
+$primary-color: #1e1e20;
+$secondary-color: pink;
+$text-color: #dfdfd7;
+$hover-color: green;
+$clicked-color: gray;
+
+.left-section a {
+  color: $text-color;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
+
+.left-section a :hover {
+  color: $hover-color;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.left-section:click {
+  color: $clicked-color;
+  cursor: pointer;
+}
+
+// SASS MAP - like javascript (object) key value pari ========================= //
+
+$font-weights: (
+  "regular": 300,
+  "medium": 500,
+  "bold": 2000,
+);
+
+$font-size: (
+  "regular": 16px,
+  "medium": 24px,
+  "bold": 30px,
+);
 
 body {
-  width: 100vw;
-  height: 100vh;
-  background-color: #1e1e20;
-  color: #dfdfd7;
+  width: 50%;
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 2rem;
+  margin: auto;
 }
 
-.nav-bar {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  height: auto;
-  width: 100%;
+.para1 {
+  color: $text-color;
+  font-weight: map-get($font-weights, regular);
+  margin: auto;
 }
 
-.nav-container {
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
-
-  ul {
-    margin: 0 auto;
-
-    li {
-      display: flex;
-      list-style-type: none;
-      display: flex;
-    }
-  }
-}
-
-.left-section {
-  display: grid;
-  grid-template-columns: minmax(1fr);
-  gap: 1rem;
+.para2 {
+  color: $secondary-color;
+  font-weight: map-get($font-weights, bold);
+  margin: auto;
+  font-size: map-get($font-size, medium);
 }

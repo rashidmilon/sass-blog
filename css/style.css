@@ -19,7 +19,7 @@ body {
 }
 
 .nav-container {
-  width: 70%;
+  width: 80%;
   height: auto;
   margin: 0 auto;
 }
@@ -35,6 +35,7 @@ body {
 .left-section {
   display: grid;
   grid-template-columns: minmax(1fr);
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

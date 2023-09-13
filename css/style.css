@@ -1,41 +1,17 @@
-.left-section a {
-  color: #dfdfd7;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
+/* Error: Expected identifier.
+ *    ,
+ * 59 | @mixin;
+ *    |       ^
+ *    '
+ *   scss\main.scss 59:7  root stylesheet */
 
-.left-section a :hover {
-  color: green;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.6rem;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a    \2577 \a 59 \2502  @mixin;\d\a    \2502        ^\a    \2575 \a   scss\\main.scss 59:7  root stylesheet";
 }
-
-.left-section:click {
-  color: gray;
-  cursor: pointer;
-}
-
-body {
-  width: 50%;
-  background-color: #1e1e20;
-  color: #dfdfd7;
-  padding: 2rem;
-  margin: auto;
-}
-
-.para1 {
-  color: #dfdfd7;
-  font-weight: 300;
-  margin: auto;
-}
-
-.para2 {
-  color: pink;
-  font-weight: 2000;
-  margin: auto;
-  font-size: 24px;
-}
-
-/*# sourceMappingURL=style.css.map */

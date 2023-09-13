@@ -6,25 +6,6 @@ $text-color: #dfdfd7;
 $hover-color: green;
 $clicked-color: gray;
 
-.left-section a {
-  color: $text-color;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.left-section a :hover {
-  color: $hover-color;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.6rem;
-}
-
-.left-section:click {
-  color: $clicked-color;
-  cursor: pointer;
-}
-
 // SASS MAP - like javascript (object) key value pear ========================= //
 
 $font-weights: (
@@ -47,13 +28,27 @@ body {
   margin: auto;
 }
 
-.para1 {
+.main a {
+  color: $text-color;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+  #{main} a :hover {
+    color: $hover-color;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+}
+
+.main_para1 {
   color: $text-color;
   font-weight: map-get($font-weights, regular);
   margin: auto;
 }
 
-.para2 {
+.main_para2 {
   color: $secondary-color;
   font-weight: map-get($font-weights, bold);
   margin: auto;

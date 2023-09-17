@@ -1,17 +1,50 @@
-/* Error: Undefined variable.
- *   ,
- * 6 |   background-color: $primary-color;
- *   |                     ^^^^^^^^^^^^^^
- *   '
- *   scss\main.scss 6:21  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 6 \2502    background-color: $primary-color;\d\a   \2502                      ^^^^^^^^^^^^^^\a   \2575 \a   scss\\main.scss 6:21  root stylesheet";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  width: 70%;
+  background-color: #1e1e20;
+  color: #dfdfd7;
+  padding: 2rem;
+  margin: auto;
+}
+
+.main {
+  width: 70%;
+  font-size: 24px;
+}
+.main a {
+  color: #dfdfd7;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.main a :hover {
+  color: green;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2.2rem;
+}
+
+.main__para1 {
+  color: #dfdfd7;
+  font-weight: 500;
+  font-size: 12px;
+}
+:hover {
+  color: green;
+}
+
+.main__para2 {
+  color: #dfdfd7;
+  font-weight: 2000;
+  font-size: 24px;
+}
+:hover {
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

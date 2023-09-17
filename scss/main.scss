@@ -16,17 +16,19 @@ body {
   max-height: 90px;
   position: fixed;
   top: 0;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
 }
 
 .nav-left {
   display: flex;
   margin-right: auto;
+  align-items: center;
 }
 
 .nav-left img {
   width: 24px;
   height: 24px;
+  display: inherit;
 }
 
 .nav-right {
@@ -99,6 +101,7 @@ ul {
 
 .btn-container {
   display: flex;
+  padding-bottom: 2rem;
 }
 
 .btn button {
@@ -118,4 +121,43 @@ button.active {
   border: 1px solid #6ee7b7;
 }
 
+.card {
+  height: 200px;
+  width: 275px;
+  box-shadow: 0px 0px 10px 0px rgba(8, 7, 7, 0.79);
+  border-radius: 0.5rem;
+}
+
+.card-container {
+  display: flex;
+  gap: 1.5rem;
+  align-content: space-between;
+  padding: 2rem 0 5rem 0;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 2rem 1rem 0.5rem 1rem;
+}
+
+.card-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+hr {
+  color: #4f4747;
+  border: 0.5px solid #4f4747;
+}
+
+footer {
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+  line-height: 24px;
+}
 // SASS mixin -  ========================= //

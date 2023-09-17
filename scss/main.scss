@@ -20,6 +20,8 @@ $font-size: (
   "bold": 30px,
 );
 
+
+
 body {
   width: 50%;
   background-color: $primary-color;
@@ -28,11 +30,14 @@ body {
   margin: auto;
 }
 
-.main a {
-  color: $text-color;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.5rem;
+.main {
+  font-size: map-get($font-size, );
+
+  .main a {
+    color: $text-color;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
 
   #{main} a :hover {
     color: $hover-color;

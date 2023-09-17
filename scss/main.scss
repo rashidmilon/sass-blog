@@ -1,29 +1,8 @@
-// SASS Veriables ========================= //
-
-$primary-color: #1e1e20;
-$secondary-color: pink;
-$text-color: #dfdfd7;
-$hover-color: green;
-$clicked-color: gray;
-
-// SASS MAP - like javascript (object) key value pear ========================= //
-
-$font-weights: (
-  "regular": 300,
-  "medium": 500,
-  "bold": 2000,
-);
-
-$font-size: (
-  "regular": 16px,
-  "medium": 24px,
-  "bold": 30px,
-);
-
-
+@import url(./_reset.scss);
+@import url(./_variables.scss);
 
 body {
-  width: 50%;
+  width: 70%;
   background-color: $primary-color;
   color: $text-color;
   padding: 2rem;
@@ -31,34 +10,42 @@ body {
 }
 
 .main {
-  font-size: map-get($font-size, );
+  width: 70%;
+  font-size: 24px;
 
-  .main a {
+  a {
     color: $text-color;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
 
-  #{main} a :hover {
+  a :hover {
     color: $hover-color;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
   }
 }
 
-.main_para1 {
+.main__para1 {
   color: $text-color;
   font-weight: map-get($font-weights, regular);
-  margin: auto;
+  font-size: map-get($font-size, regular);
+
+  @at-root :hover {
+    color: $hover-color;
+  }
 }
 
-.main_para2 {
-  color: $secondary-color;
+.main__para2 {
+  color: $text-color;
   font-weight: map-get($font-weights, bold);
-  margin: auto;
   font-size: map-get($font-size, medium);
-}
-// SASS mixin -  ========================= //
 
-@mixin;
+  @at-root :hover {
+    color: $hover-color;
+  }
+}
+
+// SASS mixin -  ========================= //

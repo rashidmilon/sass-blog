@@ -1,9 +1,9 @@
-/* Error: Expected identifier.
- *    ,
- * 59 | @mixin;
- *    |       ^
- *    '
- *   scss\main.scss 59:7  root stylesheet */
+/* Error: Undefined variable.
+ *   ,
+ * 6 |   background-color: $primary-color;
+ *   |                     ^^^^^^^^^^^^^^
+ *   '
+ *   scss\main.scss 6:21  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Expected identifier.\a    \2577 \a 59 \2502  @mixin;\d\a    \2502        ^\a    \2575 \a   scss\\main.scss 59:7  root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 6 \2502    background-color: $primary-color;\d\a   \2502                      ^^^^^^^^^^^^^^\a   \2575 \a   scss\\main.scss 6:21  root stylesheet";
 }

@@ -35,6 +35,11 @@ body {
   display: flex;
 }
 
+.active li {
+  color: #10b981;
+  text-decoration: none;
+}
+
 ul {
   display: flex;
 
